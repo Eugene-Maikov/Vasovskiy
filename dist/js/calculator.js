@@ -12,11 +12,7 @@ function outputUpdateHouse(vol) {
     outputHouse.value = "".concat(vol, " \u20BD");
 
     if (widthWindow < 800) {
-      outputHouse.style.left = vol / 56000 - 85 + 'px';
-    }
-
-    if (widthWindow < 615) {
-      outputHouse.style.left = vol / 81000 - 65 + 'px';
+      outputHouse.style.left = vol / 92000 - 55 + 'px';
     }
 
     if (widthWindow < 424) {
@@ -33,11 +29,7 @@ function outputUpdateRegion(vol) {
     outputRegion.value = "".concat(vol, " \u20BD");
 
     if (widthWindow < 800) {
-      outputRegion.style.left = vol / 22000 + 'px';
-    }
-
-    if (widthWindow < 615) {
-      outputRegion.style.left = vol / 33000 + 6 + 'px';
+      outputRegion.style.left = vol / 37000 + 6 + 'px';
     }
 
     if (widthWindow < 424) {

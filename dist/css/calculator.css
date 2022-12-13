@@ -812,22 +812,12 @@
 }
 @media (max-width: 800px) {
   .calculator .forms__group--range {
-    width: 500px;
-  }
-}
-@media (max-width: 615px) {
-  .calculator .forms__group--range {
-    width: 350px;
+    width: 316px;
   }
 }
 @media (max-width: 425px) {
   .calculator .forms__group--range {
     margin-left: 25px;
-  }
-}
-@media (max-width: 424px) {
-  .calculator .forms__group--range {
-    width: 240px;
   }
 }
 .calculator .forms__label--range {
@@ -875,7 +865,7 @@
   appearance: none;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  background-image: url("../assets/img/slider-thumb.png");
+  background-image: url("../assets/img/slider-thumb.svg");
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -885,7 +875,7 @@
   -moz-appearance: none;
   appearance: none;
   box-sizing: content-box;
-  background-image: url("../assets/img/slider-thumb.png");
+  background-image: url("../assets/img/slider-thumb.svg");
   width: 20px;
   height: 20px;
   cursor: pointer;
@@ -893,7 +883,7 @@
 .calculator .forms__input--range::-ms-thumb {
   appearance: none;
   box-sizing: content-box;
-  background-image: url("../assets/img/slider-thumb.png");
+  background-image: url("../assets/img/slider-thumb.svg");
   width: 20px;
   height: 20px;
   cursor: pointer;
