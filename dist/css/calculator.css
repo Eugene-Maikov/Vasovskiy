@@ -874,7 +874,7 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-  content: "sdsd";
+  border-radius: 50%;
 }
 .calculator .forms__input--range::-moz-range-thumb {
   -moz-appearance: none;
@@ -884,6 +884,7 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
+  border-radius: 50%;
 }
 .calculator .forms__input--range::-ms-thumb {
   appearance: none;
@@ -892,6 +893,7 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
+  border-radius: 50%;
 }
 .calculator .forms #rangeValueHouse,
 .calculator .forms #rangeValueRegion {

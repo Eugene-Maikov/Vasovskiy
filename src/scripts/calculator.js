@@ -36,7 +36,6 @@ function outputUpdateHouse(vol){
     if (widthWindow < 424) {
       outputHouse.style.left = vol / 124000 - 42 + 'px';
     }
-
   }
 }
 
