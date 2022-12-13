@@ -685,15 +685,12 @@
       @media(max-width: 800px) {
         width: 316px;
       }
-      //@media(max-width: 615px) {
-      //  width: 350px;
-      //}
       @media(max-width: 425px) {
         margin-left: 25px;
       }
-      //@media(max-width: 424px) {
-      //  width: 240px;
-      //}
+      @media(max-width: 424px) {
+        width: 240px;
+      }
     }
 
     &__label--range {

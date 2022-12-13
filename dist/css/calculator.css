@@ -820,6 +820,11 @@
     margin-left: 25px;
   }
 }
+@media (max-width: 424px) {
+  .calculator .forms__group--range {
+    width: 240px;
+  }
+}
 .calculator .forms__label--range {
   font-weight: 400;
   font-size: 25px;
