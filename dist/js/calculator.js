@@ -21,6 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 var outputHouse = document.querySelector('#rangeValueHouse');
 var outputRegion = document.querySelector('#rangeValueRegion');
+var rangeHouse = document.querySelector('#rangeHouse');
+var rangeRegion = document.querySelector('#rangeRegion');
+var checkboxes = document.querySelectorAll(".forms__input--checkbox");
+var form = document.querySelector('#calculator-form');
 var widthWindow = document.documentElement.clientWidth;
 
 function outputUpdateHouse(vol) {
@@ -38,6 +42,8 @@ function outputUpdateHouse(vol) {
       outputHouse.style.left = vol / 124000 - 42 + 'px';
     }
   }
+
+  rangeHouse.setAttribute('value', vol);
 }
 
 function outputUpdateRegion(vol) {
@@ -55,5 +61,20 @@ function outputUpdateRegion(vol) {
       outputRegion.style.left = vol / 53000 + 6 + 'px';
     }
   }
-}
+
+  rangeRegion.setAttribute('value', vol);
+} // Валидация checkbox
+
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  var messageError = document.querySelector('.error-message');
+  checkboxes.forEach(function (elem) {
+    if (elem.checked || rangeHouse.value > 5000000 || rangeRegion.value > 0) {
+      form.submit();
+    } else {
+      messageError.style.display = 'block';
+    }
+  });
+});
 //# sourceMappingURL=calculator.js.map

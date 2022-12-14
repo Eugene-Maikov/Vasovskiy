@@ -639,4 +639,17 @@ section {
   font-weight: 400;
   font-size: 12.8px;
 }
+
+#calculator-form {
+  position: relative;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-top: 15px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
 /*# sourceMappingURL=global.css.map */

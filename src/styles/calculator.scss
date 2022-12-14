@@ -298,19 +298,31 @@
 .expenses {
   margin-bottom: 65px;
 
-  @media(max-width: 990px) {
-    .container {
-      padding-right: 41px;
-    }
-  }
   @media(max-width: 767px) {
     margin-bottom: 31px;
   }
-  @media(max-width: 425px) {
+
+  @media(max-width: 990px) {
     .container {
-      padding-right: 27px;
+      padding-right: 40px;
     }
   }
+  @media(max-width: 513px) {
+    .container {
+      padding-right: 38px;
+    }
+  }
+  @media(max-width: 505px) {
+    .container {
+      padding-right: 37px;
+    }
+  }
+  @media(max-width: 500px) {
+    .container {
+      padding-right: 26px;
+    }
+  }
+
 
   &__inner {
     width: 100%;
@@ -320,8 +332,8 @@
       padding: 0 25px;
       overflow-x: scroll;
     }
-    @media(max-width: 425px) {
-      padding: 0 11px;
+    @media(max-width: 500px) {
+      padding: 0 9px;
     }
   }
 
@@ -365,6 +377,12 @@
       @media(max-width: 375px) {
         padding: 3px 5px;
       }
+      @media(max-width: 370px) {
+        min-width: calc(50vw - 23px);
+      }
+      @media(max-width: 335px) {
+        min-width: calc(46vw - 19px);
+      }
     }
 
     tbody tr td:nth-child(2) {
@@ -372,7 +390,8 @@
       font-size: 25px;
       line-height: 270.3%;
       color: #000000;
-      text-align: center;
+      text-align: left;
+      padding-left: 63px;
       width: 35%;
 
       @media(max-width: 1366px) {
@@ -385,15 +404,31 @@
       }
       @media(max-width: 990px) {
         min-width: calc(40vw - 41px);
-        padding: 3px 0;
+        padding: 3px 0 3px 70px;
       }
       @media(max-width: 767px) {
         font-size: 12px;
+        padding: 3px 0 3px 40px;
+      }
+      @media(max-width: 600px) {
+        padding: 3px 0 3px 25px;
+      }
+      @media(max-width: 500px) {
+        min-width: calc(40vw - 11px);
       }
       @media(max-width: 425px) {
-        min-width: calc(45vw - 27px);
+        min-width: calc(45vw - 25px);
         font-size: 10px;
         line-height: 113%;
+        padding: 3px 0 3px 20px;
+      }
+      @media(max-width: 370px) {
+        min-width: calc(49vw - 25px);
+        padding: 3px 0 3px 10px;
+      }
+      @media(max-width: 351px) {
+        min-width: calc(48vw - 22px);
+        padding: 3px 0 3px 10px;
       }
     }
 
@@ -870,6 +905,7 @@
       text-align: center;
       color: #FFFFFF;
       margin: 65px auto 0 auto;
+      cursor: pointer;
 
       &:hover{
         color: #000;
@@ -896,3 +932,4 @@
     }
   }
 }
+
