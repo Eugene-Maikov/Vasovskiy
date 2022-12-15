@@ -652,4 +652,10 @@ section {
   position: absolute;
   width: 100%;
 }
+@media (max-width: 768px) {
+  .error-message {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=global.css.map */
